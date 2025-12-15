@@ -1,170 +1,145 @@
-📊 YouTube Comments Sentiment & Abusive Language Analysis
+# 📊 YouTube Comments Sentiment & Abusive Language Analysis
 
-An interactive Machine Learning and NLP-based web application that analyzes YouTube video comments to identify sentiment polarity and abusive/offensive language.
-Built using Streamlit, classical ML models, and transformer-based deep learning.
+An interactive **Machine Learning and NLP-based web application** that analyzes YouTube video comments to identify **sentiment polarity** and **abusive/offensive language**.  
+Built using **Streamlit**, classical ML models, and **transformer-based deep learning**.
 
-🚀 Project Overview
+---
 
-This project fetches comments from YouTube videos using the YouTube Data API, preprocesses multilingual text, and applies Natural Language Processing (NLP) and Machine Learning techniques to:
+## 🚀 Project Overview
 
-Classify comments as Positive, Negative, or Neutral
+This project fetches comments from YouTube videos using the **YouTube Data API**, preprocesses multilingual text, and applies **Natural Language Processing (NLP)** and **Machine Learning** techniques to:
 
-Detect abusive/offensive comments
+- Classify comments as **Positive, Negative, or Neutral**
+- Detect **abusive/offensive comments**
+- Compare the performance of **multiple ML models**
+- Visualize sentiment trends using charts and word clouds
 
-Compare the performance of multiple ML models
+The application provides a **user-friendly web interface** for real-time analysis.
 
-Visualize sentiment trends using charts and word clouds
+---
 
-The application provides a user-friendly web interface for real-time analysis.
+## ✨ Key Features
 
-✨ Key Features
+- 📥 Fetch up to **500 YouTube comments** per video  
+- 🌐 Automatic **language detection & translation to English**  
+- 🧹 Advanced text preprocessing and cleaning  
+- 😊 Sentiment classification (**Positive / Negative / Neutral**)  
+- 🚨 Abusive language detection using **RoBERTa Transformer**  
+- 🤖 Multiple ML models with hyperparameter tuning  
+- 📊 Model comparison and performance evaluation  
+- ☁️ Word cloud visualization  
+- 🖥️ Interactive **Streamlit UI**
 
-📥 Fetch up to 500 YouTube comments per video
+---
 
-🌐 Automatic language detection & translation to English
+## 🛠️ Tech Stack
 
-🧹 Advanced text preprocessing and cleaning
+### Programming & Frameworks
+- Python
+- Streamlit
 
-😊 Sentiment classification (Positive / Negative / Neutral)
+### Machine Learning & NLP
+- NLTK
+- TextBlob
+- Scikit-learn
+- Imbalanced-learn
+- XGBoost
+- Hugging Face Transformers
+- PyTorch
 
-🚨 Abusive language detection using RoBERTa Transformer
+### Visualization
+- Matplotlib
+- Seaborn
+- WordCloud
 
-🤖 Multiple ML models with hyperparameter tuning
+### APIs
+- YouTube Data API v3
+- Google Translator API
 
-📊 Model comparison and performance evaluation
+---
 
-☁️ Word cloud visualization
+## 🧠 Machine Learning Workflow
 
-🖥️ Interactive Streamlit UI
+1. Collect YouTube comments using the API  
+2. Clean and preprocess text data  
+3. Detect language and translate non-English text  
+4. Extract features using **TF-IDF (word + character n-grams)**  
+5. Handle class imbalance using **ADASYN**  
+6. Train and tune ML models using **GridSearchCV**  
+7. Evaluate models using accuracy, confusion matrix, and classification report  
 
-🛠️ Tech Stack
+---
 
-Programming & Frameworks
+## 🧪 Application Modules
 
-Python
+### 1️⃣ Single Video Analysis
+- Sentiment and abusive content analysis
+- Train and evaluate selected ML models
 
-Streamlit
+### 2️⃣ Compare Two Videos
+- Compare sentiment distributions between two videos
+- Model performance comparison
 
-Machine Learning & NLP
+### 3️⃣ Compare Two Models
+- Side-by-side ML model evaluation on the same video
 
-NLTK
+### 4️⃣ Abusive Comments Detection
+- Dedicated tab to view offensive comments
+- Word cloud of abusive comments
 
-TextBlob
+---
 
-Scikit-learn
+## 🖥️ How to Run the Project
 
-Imbalanced-learn
+### 🔧 Prerequisites
+- Python 3.8 or higher
+- YouTube Data API Key
 
-XGBoost
+### 📦 Install Dependencies
+```bash
+pip install -r requirements.txt
+## 🖥️ How to Run the Project
+### 🔧 Prerequisites
+- Python 3.8 or higher
+- YouTube Data API Key
 
-Hugging Face Transformers
-
-PyTorch
-
-Visualization
-
-Matplotlib
-
-Seaborn
-
-WordCloud
-
-APIs
-
-YouTube Data API v3
-
-Google Translator API
-
-🧠 Machine Learning Workflow
-
-Collect YouTube comments using API
-
-Clean and preprocess text data
-
-Detect language and translate non-English text
-
-Extract features using TF-IDF (word + character n-grams)
-
-Handle class imbalance using ADASYN
-
-Train and tune ML models using GridSearchCV
-
-Evaluate using accuracy, confusion matrix, and classification report
-
-🧪 Application Modules
-1️⃣ Single Video Analysis
-
-Sentiment and abusive content analysis
-
-Train and evaluate selected ML models
-
-2️⃣ Compare Two Videos
-
-Compare sentiment distributions between two videos
-
-Model performance comparison
-
-3️⃣ Compare Two Models
-
-Side-by-side ML model evaluation on the same video
-
-4️⃣ Abusive Comments Detection
-
-Dedicated tab to view offensive comments
-
-Word cloud of abusive comments
-
-🖥️ How to Run the Project
-🔧 Prerequisites
-
-Python 3.8+
-
-YouTube Data API Key
-
-📦 Install Dependencies
+### 📦 Install Dependencies
+```bash
 pip install -r requirements.txt
 
-▶️ Run the Application
+### ▶️ Run the Application
+```bash
 streamlit run app.py
 
-📂 Project Structure
-youtube-comments-analysis
-├── app.py
-├── requirements.txt
-├── README.md
+## 📌 Results & Insights
 
-📌 Results & Insights
+- Ensemble and XGBoost models showed strong performance  
+- TF-IDF word + character features improved robustness  
+- Transformer-based abusive detection increased accuracy  
+- Effective handling of multilingual comments  
 
-Ensemble and XGBoost models showed strong performance
+---
 
-TF-IDF word + character features improved robustness
+## 🌱 Future Enhancements
 
-Transformer-based abusive detection increased accuracy
+- Fine-tuned transformer-based sentiment model  
+- Real-time comment streaming  
+- Topic modeling and clustering  
+- Cloud deployment  
 
-Effective handling of multilingual comments
+---
 
-🌱 Future Enhancements
+## 👩‍💻 Author
 
-Fine-tuned transformer-based sentiment model
+**Tapasvini S**  
+🎓 MSc Artificial Intelligence & Machine Learning  
+📧 Email: tapas541@gmail.com  
+🔗 GitHub: https://github.com/Tapasvini541  
 
-Real-time comment streaming
+---
 
-Topic modeling and clustering
+## ⭐ Acknowledgements
 
-Cloud deployment
-
-👩‍💻 Author
-
-Tapasvini S
-🎓 MSc Artificial Intelligence & Machine Learning
-📧 Email: your-email@example.com
-
-🔗 GitHub: https://github.com/your-username
-
-⭐ Acknowledgements
-
-Hugging Face Transformers
-
-Google YouTube Data API
-
-NLTK & Scikit-learn Community
+- Hugging Face Transformers  
+- Google YouTube Data API  
+- NLTK & Scikit-learn Community  
