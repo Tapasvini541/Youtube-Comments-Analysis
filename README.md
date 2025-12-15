@@ -1,123 +1,51 @@
 📊 YouTube Comments Sentiment & Abusive Language Analysis
 
-An end-to-end Machine Learning and NLP-based web application that analyzes YouTube video comments to identify sentiment trends and abusive language.
-Built using Streamlit, classical ML models, and transformer-based deep learning techniques.
+An interactive Machine Learning and NLP-based web application that analyzes YouTube video comments to identify sentiment polarity and abusive/offensive language.
+Built using Streamlit, classical ML models, and transformer-based deep learning.
 
 🚀 Project Overview
 
-This project extracts comments from YouTube videos using the YouTube Data API, preprocesses multilingual text, and applies Natural Language Processing (NLP) and Machine Learning techniques to:
+This project fetches comments from YouTube videos using the YouTube Data API, preprocesses multilingual text, and applies Natural Language Processing (NLP) and Machine Learning techniques to:
 
-Classify comments into Positive, Negative, or Neutral
+Classify comments as Positive, Negative, or Neutral
 
-Detect offensive / abusive language
+Detect abusive/offensive comments
 
-Compare performance of multiple ML models
+Compare the performance of multiple ML models
 
-Visualize insights using charts and word clouds
+Visualize sentiment trends using charts and word clouds
 
-Compare sentiment trends across videos and models
-
-The application provides an interactive and user-friendly interface for real-time analysis.
+The application provides a user-friendly web interface for real-time analysis.
 
 ✨ Key Features
-🔍 Comment Collection
 
-Fetches up to 500 YouTube comments per video
+📥 Fetch up to 500 YouTube comments per video
 
-Supports multilingual comments
+🌐 Automatic language detection & translation to English
 
-Automatic language detection and translation to English
+🧹 Advanced text preprocessing and cleaning
 
-🧹 Text Preprocessing
+😊 Sentiment classification (Positive / Negative / Neutral)
 
-Emoji removal
+🚨 Abusive language detection using RoBERTa Transformer
 
-URL, mention, hashtag, digit, and punctuation removal
+🤖 Multiple ML models with hyperparameter tuning
 
-Stopword removal
+📊 Model comparison and performance evaluation
 
-Lemmatization
+☁️ Word cloud visualization
 
-Repeated character normalization
-
-😊 Sentiment Analysis
-
-Sentiment classes:
-
-Positive
-
-Negative
-
-Neutral
-
-Uses TextBlob polarity scoring
-
-Visual sentiment distribution
-
-🚨 Abusive Language Detection
-
-Transformer-based model:
-
-cardiffnlp/twitter-roberta-base-offensive
-
-Classifies comments as:
-
-Offensive
-
-Not Offensive
-
-Dedicated tab to view abusive comments separately
-
-🤖 Machine Learning Models
-
-Logistic Regression
-
-Random Forest
-
-Decision Tree
-
-Support Vector Machine (SVM)
-
-K-Nearest Neighbors (Euclidean, Minkowski, Cosine)
-
-XGBoost
-
-Ensemble Voting Classifier
-
-📊 Model Optimization & Evaluation
-
-TF-IDF (Word + Character n-grams)
-
-Chi-Square feature selection
-
-ADASYN oversampling for class imbalance
-
-Hyperparameter tuning using GridSearchCV
-
-Stratified K-Fold Cross Validation
-
-Accuracy, Confusion Matrix & Classification Report
-
-📈 Visual Analytics
-
-Sentiment distribution bar charts
-
-Word clouds for:
-
-All comments
-
-Abusive comments
-
-Model accuracy comparison charts
+🖥️ Interactive Streamlit UI
 
 🛠️ Tech Stack
+
 Programming & Frameworks
 
 Python
 
 Streamlit
 
-NLP & Machine Learning
+Machine Learning & NLP
 
 NLTK
 
@@ -147,67 +75,49 @@ YouTube Data API v3
 
 Google Translator API
 
-🧠 Machine Learning Pipeline
+🧠 Machine Learning Workflow
 
-Data Collection
+Collect YouTube comments using API
 
-Fetch comments using YouTube API
+Clean and preprocess text data
 
-Preprocessing
+Detect language and translate non-English text
 
-Cleaning, translation, lemmatization
+Extract features using TF-IDF (word + character n-grams)
 
-Feature Engineering
+Handle class imbalance using ADASYN
 
-TF-IDF Word n-grams (1–2)
+Train and tune ML models using GridSearchCV
 
-TF-IDF Character n-grams (3–5)
-
-Feature union
-
-Feature Selection
-
-Chi-Square Test
-
-Class Imbalance Handling
-
-ADASYN oversampling
-
-Model Training & Evaluation
-
-GridSearchCV
-
-Stratified K-Fold Cross Validation
-
-Performance metrics
+Evaluate using accuracy, confusion matrix, and classification report
 
 🧪 Application Modules
 1️⃣ Single Video Analysis
 
-Sentiment & abusive comment detection
+Sentiment and abusive content analysis
 
-Train a selected ML model or all models
+Train and evaluate selected ML models
 
 2️⃣ Compare Two Videos
 
-Compare sentiment distribution between two videos
+Compare sentiment distributions between two videos
 
 Model performance comparison
 
 3️⃣ Compare Two Models
 
-Side-by-side ML model comparison on the same video
+Side-by-side ML model evaluation on the same video
 
 4️⃣ Abusive Comments Detection
 
-Separate tab for offensive comments
+Dedicated tab to view offensive comments
 
-Abusive comments word cloud
+Word cloud of abusive comments
 
 🖥️ How to Run the Project
 🔧 Prerequisites
 
-Python 3.8 or higher
+Python 3.8+
 
 YouTube Data API Key
 
@@ -225,23 +135,21 @@ youtube-comments-analysis
 
 📌 Results & Insights
 
-Ensemble and XGBoost models achieved strong performance
+Ensemble and XGBoost models showed strong performance
 
-Character + word TF-IDF improved robustness
+TF-IDF word + character features improved robustness
 
-Transformer-based abusive detection improved accuracy
+Transformer-based abusive detection increased accuracy
 
 Effective handling of multilingual comments
 
 🌱 Future Enhancements
 
-Fine-tuned transformer-based sentiment classifier
+Fine-tuned transformer-based sentiment model
 
 Real-time comment streaming
 
 Topic modeling and clustering
-
-User authentication
 
 Cloud deployment
 
@@ -249,9 +157,9 @@ Cloud deployment
 
 Tapasvini S
 🎓 MSc Artificial Intelligence & Machine Learning
+📧 Email: your-email@example.com
 
-Areas of Interest
-Machine Learning, NLP, Prompt Engineering, UI/UX Design (Figma)
+🔗 GitHub: https://github.com/your-username
 
 ⭐ Acknowledgements
 
@@ -259,4 +167,4 @@ Hugging Face Transformers
 
 Google YouTube Data API
 
-NLTK & Scikit-learn communities
+NLTK & Scikit-learn Community
