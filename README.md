@@ -16,6 +16,14 @@ This project fetches comments from YouTube videos using the **YouTube Data API**
 - Visualize sentiment trends using charts and word clouds
 
 The application provides a **user-friendly web interface** for real-time analysis.
+## 📂 Project Structure
+
+```
+youtube-comments-analysis/
+├── app.py                       
+├── requirements.txt         
+└── README.md                   
+```
 ## ✨ Key Features
 
 - 📥 Fetch up to **500 YouTube comments** per video  
